@@ -1,103 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about Arrays in Python with examples and exercises for beginners to advanced.">
-  <title>Python Arrays Tutorial</title>
-  <link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เรียนรู้ Arrays ใน Python พร้อมตัวอย่างและแบบฝึกหัดที่เข้าใจง่าย">
+    <title>เรียนรู้ Arrays ใน Python</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Python Arrays Tutorial</h1>
-    <nav>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#examples">Examples</a></li>
-        <li><a href="#exercises">Exercises</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="introduction">
-    <h2>What is an Array?</h2>
-    <p>
-      An <strong>Array</strong> in Python is a collection of elements, typically of the same type, stored in contiguous memory locations.
-      Arrays are particularly useful when you need to store multiple values and perform operations on them. Python does not have built-in support for arrays, but we can use the <code>array</code> module or lists to work with arrays.
-    </p>
-    <p>
-      <strong>Note:</strong> In Python, lists are often used as arrays. However, for performance and memory efficiency, the <code>array</code> module can be used if the type of elements is fixed.
-    </p>
-  </section>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>เรียนรู้ Arrays ใน Python</h1>
+            <p>ศึกษาการใช้งาน Arrays (List) ใน Python พร้อมตัวอย่างและแบบฝึกหัดที่เข้าใจง่าย</p>
+        </div>
+    </header>
 
-  <section id="examples">
-    <h2>Arrays in Python - Examples</h2>
-    
-    <h3>1. Creating Arrays using the array module</h3>
-    <p>To use arrays, first import the <code>array</code> module.</p>
-    <pre><code>
-import array
+    <!-- Main Content Section -->
+    <main class="container">
+        <section class="tutorial-section">
+            <h2>การใช้งาน Arrays ใน Python</h2>
+            
+            <div class="tutorial-card">
+                <h3>การสร้าง Array (List) ใน Python</h3>
+                <p>ใน Python, Arrays หรือ Lists เป็นโครงสร้างข้อมูลที่สามารถเก็บข้อมูลหลายประเภท เช่น ตัวเลข (int), ข้อความ (str), หรือแม้กระทั่ง List อื่นๆ</p>
+                <pre><code>my_array = [1, 2, 3, 4, 5]</code></pre>
+            </div>
 
-# Creating an array of integers
-arr = array.array('i', [1, 2, 3, 4, 5])
-print(arr)
-    </code></pre>
+            <div class="tutorial-card">
+                <h3>การเข้าถึงสมาชิกใน Array</h3>
+                <p>การเข้าถึงสมาชิกใน Array หรือ List สามารถทำได้โดยการใช้ดัชนี (index) ซึ่งเริ่มต้นจาก 0</p>
+                <pre><code>print(my_array[0])  # Output: 1</code></pre>
+            </div>
 
-    <h3>2. Accessing Elements in an Array</h3>
-    <p>Elements in an array can be accessed via their index, just like lists.</p>
-    <pre><code>
-print(arr[0])  # Output: 1
-print(arr[3])  # Output: 4
-    </code></pre>
+            <div class="tutorial-card">
+                <h3>การเพิ่มสมาชิกใน Array</h3>
+                <p>การเพิ่มสมาชิกใน Array สามารถทำได้หลายวิธี เช่น การใช้ <code>append()</code> หรือ <code>insert()</code></p>
+                <pre><code>my_array.append(6)</code></pre>
+                <pre><code>my_array.insert(2, 99)</code></pre>
+            </div>
 
-    <h3>3. Modifying Elements in an Array</h3>
-    <p>You can modify an element of the array by assigning a new value to it.</p>
-    <pre><code>
-arr[2] = 10
-print(arr)  # Output: array('i', [1, 2, 10, 4, 5])
-    </code></pre>
-  </section>
+            <div class="tutorial-card">
+                <h3>การลบสมาชิกจาก Array</h3>
+                <p>การลบสมาชิกจาก Array สามารถทำได้โดยใช้ <code>remove()</code>, <code>pop()</code>, หรือ <code>del</code></p>
+                <pre><code>my_array.remove(99)</code></pre>
+                <pre><code>removed_value = my_array.pop(1)</code></pre>
+            </div>
 
-  <section id="exercises">
-    <h2>Exercises</h2>
-    
-    <h3>Exercise 1: Create and Print an Array</h3>
-    <p>
-      Create an array of your own with at least 5 elements and print it. Try to use the <code>array</code> module.
-    </p>
-    <pre><code>
-# Your code here
-    </code></pre>
-    
-    <h3>Exercise 2: Modify and Access Array Elements</h3>
-    <p>
-      Given the array <code>arr = [5, 10, 15, 20]</code>, change the second element to 25, then print the modified array.
-    </p>
-    <pre><code>
-# Your code here
-    </code></pre>
+            <div class="tutorial-card">
+                <h3>การทำงานกับ 2D Arrays (List of Lists)</h3>
+                <p>เราสามารถใช้ List of Lists (หรือ 2D Arrays) ในการจัดเก็บข้อมูลที่มีหลายมิติ เช่น เมทริกซ์</p>
+                <pre><code>matrix = [</code></pre>
+                <pre><code>    [1, 2, 3],</code></pre>
+                <pre><code>    [4, 5, 6],</code></pre>
+                <pre><code>    [7, 8, 9]</code></pre>
+                <pre><code>]</code></pre>
+            </div>
 
-    <h3>Exercise 3: Array Operations</h3>
-    <p>
-      Create an array with 10 integers. Then, iterate through the array and print only the even numbers.
-    </p>
-    <pre><code>
-# Your code here
-    </code></pre>
+            <div class="tutorial-card">
+                <h3>การใช้ Loops กับ Arrays</h3>
+                <p>คุณสามารถใช้ Loops เพื่อทำงานกับ Arrays หรือ Lists ได้ เช่น การทำซ้ำเพื่อเข้าถึงสมาชิกทั้งหมดใน List</p>
+                <pre><code>for item in my_array:</code></pre>
+                <pre><code>    print(item)</code></pre>
+            </div>
 
-    <h3>Exercise 4: Advanced - Sum of Array Elements</h3>
-    <p>
-      Create an array with 5 integers and write a program that calculates the sum of all the elements in the array.
-    </p>
-    <pre><code>
-# Your code here
-    </code></pre>
+            <div class="tutorial-card">
+                <h3>การใช้ List Comprehension</h3>
+                <p>List Comprehension เป็นวิธีที่สะดวกในการสร้าง List ใหม่จาก List เดิม โดยการใช้เงื่อนไขหรือฟังก์ชันต่างๆ</p>
+                <pre><code>even_numbers = [x for x in range(10) if x % 2 == 0]</code></pre>
+                <pre><code>print(even_numbers)  # Output: [0, 2, 4, 6, 8]</code></pre>
+            </div>
+        </section>
 
-  </section>
+        <section class="exercise-section">
+            <h2>แบบฝึกหัด: ทดสอบความเข้าใจเกี่ยวกับ Arrays ใน Python</h2>
+            <p>ลองทำแบบฝึกหัดเหล่านี้เพื่อฝึกการใช้ Arrays (List) ใน Python:</p>
+            
+            <div class="exercise-item">
+                <label for="answer1"><strong>1. สร้าง Array ที่มีตัวเลข 10, 20, 30, 40, 50 และแสดงผลตัวเลขที่ตำแหน่งที่ 2</strong></label>
+                <textarea id="answer1" placeholder="เขียนโค้ดที่นี่"></textarea>
+            </div>
 
-  <footer>
-    <p>For more details, visit <a href="https://docs.python.org/3/library/array.html" target="_blank">Python Array Documentation</a></p>
-  </footer>
+            <div class="exercise-item">
+                <label for="answer2"><strong>2. เพิ่มค่า 60 เข้าไปใน Array และแสดงผล Array ทั้งหมด</strong></label>
+                <textarea id="answer2" placeholder="เขียนโค้ดที่นี่"></textarea>
+            </div>
+
+            <div class="exercise-item">
+                <label for="answer3"><strong>3. สร้างฟังก์ชันที่รับ List และคำนวณผลรวมของสมาชิกใน List แล้วคืนค่า</strong></label>
+                <textarea id="answer3" placeholder="เขียนโค้ดที่นี่"></textarea>
+            </div>
+
+            <div class="submit-container">
+                <button id="submit-answers">ส่งคำตอบ</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>เรียนรู้ Python Arrays - สร้างโดย [Your Name]</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('submit-answers').onclick = function() {
+            const answer1 = document.getElementById('answer1').value;
+            const answer2 = document.getElementById('answer2').value;
+            const answer3 = document.getElementById('answer3').value;
+
+            alert("คำตอบของคุณ:\n\nข้อที่ 1: " + answer1 + "\n\nข้อที่ 2: " + answer2 + "\n\nข้อที่ 3: " + answer3);
+        };
+    </script>
+
 </body>
 </html>
