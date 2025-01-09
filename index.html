@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Arrays in Python with examples and exercises for beginners to advanced.">
+  <title>Python Arrays Tutorial</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>Python Arrays Tutorial</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#exercises">Exercises</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="introduction">
+    <h2>What is an Array?</h2>
+    <p>
+      An <strong>Array</strong> in Python is a collection of elements, typically of the same type, stored in contiguous memory locations.
+      Arrays are particularly useful when you need to store multiple values and perform operations on them. Python does not have built-in support for arrays, but we can use the <code>array</code> module or lists to work with arrays.
+    </p>
+    <p>
+      <strong>Note:</strong> In Python, lists are often used as arrays. However, for performance and memory efficiency, the <code>array</code> module can be used if the type of elements is fixed.
+    </p>
+  </section>
+
+  <section id="examples">
+    <h2>Arrays in Python - Examples</h2>
+    
+    <h3>1. Creating Arrays using the array module</h3>
+    <p>To use arrays, first import the <code>array</code> module.</p>
+    <pre><code>
+import array
+
+# Creating an array of integers
+arr = array.array('i', [1, 2, 3, 4, 5])
+print(arr)
+    </code></pre>
+
+    <h3>2. Accessing Elements in an Array</h3>
+    <p>Elements in an array can be accessed via their index, just like lists.</p>
+    <pre><code>
+print(arr[0])  # Output: 1
+print(arr[3])  # Output: 4
+    </code></pre>
+
+    <h3>3. Modifying Elements in an Array</h3>
+    <p>You can modify an element of the array by assigning a new value to it.</p>
+    <pre><code>
+arr[2] = 10
+print(arr)  # Output: array('i', [1, 2, 10, 4, 5])
+    </code></pre>
+  </section>
+
+  <section id="exercises">
+    <h2>Exercises</h2>
+    
+    <h3>Exercise 1: Create and Print an Array</h3>
+    <p>
+      Create an array of your own with at least 5 elements and print it. Try to use the <code>array</code> module.
+    </p>
+    <pre><code>
+# Your code here
+    </code></pre>
+    
+    <h3>Exercise 2: Modify and Access Array Elements</h3>
+    <p>
+      Given the array <code>arr = [5, 10, 15, 20]</code>, change the second element to 25, then print the modified array.
+    </p>
+    <pre><code>
+# Your code here
+    </code></pre>
+
+    <h3>Exercise 3: Array Operations</h3>
+    <p>
+      Create an array with 10 integers. Then, iterate through the array and print only the even numbers.
+    </p>
+    <pre><code>
+# Your code here
+    </code></pre>
+
+    <h3>Exercise 4: Advanced - Sum of Array Elements</h3>
+    <p>
+      Create an array with 5 integers and write a program that calculates the sum of all the elements in the array.
+    </p>
+    <pre><code>
+# Your code here
+    </code></pre>
+
+  </section>
+
+  <footer>
+    <p>For more details, visit <a href="https://docs.python.org/3/library/array.html" target="_blank">Python Array Documentation</a></p>
+  </footer>
+</body>
+</html>
