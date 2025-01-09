@@ -1,187 +1,59 @@
-/* Reset CSS */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    padding-top: 20px;
 }
 
-/* Container for the Main Content */
+/* Container */
 .container {
-    width: 85%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Section */
+/* Header */
 header {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    color: white;
-    padding: 60px 0;
+    background-color: #5c6bc0;
+    color: #fff;
     text-align: center;
-    border-radius: 8px;
+    padding: 50px 0;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Main Content Section */
-main {
-    margin-top: 40px;
 }
 
 /* Tutorial Section */
-.tutorial-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+.tutorial-section {
+    margin: 40px 0;
 }
 
-/* Tutorial Cards */
 .tutorial-card {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.tutorial-card:hover {
-    transform: translateY(-5px);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tutorial-card h3 {
+    color: #5c6bc0;
     font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
 }
 
-.tutorial-card p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.tutorial-card pre {
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    overflow-x: auto;
-    max-height: 300px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-/* Exercise Section */
-.exercise-section {
-    margin-top: 40px;
-}
-
-.exercise-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.exercise-item {
-    margin-bottom: 20px;
-}
-
-.exercise-item label {
-    font-size: 1.2rem;
-    color: #333;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.exercise-item textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: vertical;
-    min-height: 120px;
-}
-
-.submit-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.submit-container button {
-    background-color: #ff7e5f;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.submit-container button:hover {
-    background-color: #feb47b;
-}
-
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 2px solid #444;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .tutorial-card h3 {
-        font-size: 1.6rem;
-    }
-
-    .exercise-item textarea {
-        font-size: 1rem;
-    }
-
-    .submit-container button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
-}
+.t
